@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой профиль</title>
+    <link rel="stylesheet" href="css/profile.css" type="text/css">
+    <link rel="stylesheet" href="css/profile_m.css" type="text/css">
+    <link rel="stylesheet" href="/css/shapka.css" type="text/css">
+
+
+
+</head>
+<body>
+<!--    <div class="shapka" id="shapka">-->
+<!--    <ion-icon name="logo-twitter"></ion-icon>-->
+<!--    <a href='/index'>SUPER CHAT</a>-->
+<!--    <ion-icon name="logo-nodejs"></ion-icon>-->
+<!--</div>-->
+
+
+<div class="shapka" id="shapka">
+    <div class='logo'>
+        <!--                    <ion-icon name="logo-twitter"></ion-icon>-->
+        <p>SUPER CHAT</p>
+        <!--                    <ion-icon name="logo-nodejs"></ion-icon>-->
+    </div>
+    <ul>
+        <button id="shapka_profile"><img id='ava' src='uploads/standartUser.jpeg'/>
+            <div class='profileName' id='profileName'>Войти</div>
+            <!--                    id="shapka_profile"><ion-icon name="person-circle-outline" class="ion_icon person_circle_outline"></ion-icon><p>Профиль</p>-->
+        </button>
+        <button id="shapka_chat"><ion-icon name="chatbubbles-outline" class="ion_icon"></ion-icon><p>Чатик</p></button>
+        <button id="shapka_settings"><ion-icon name="settings-outline" class="ion_icon"></ion-icon><p>Настройки</p></button>
+        <button id="adminka"><ion-icon name="code-slash-outline" style="display: none"></ion-icon><p>Админка</p></button>
+    </ul>
+
+</div>
+
+    <div id ='userProfileBlock' class='userProfileBlock'>
+        <div class='header'>
+            Ваш профиль
+        </div>
+
+        <div class='profileBody'>
+            <div class='profilePhoto'>
+                <img id="profileAva" src='uploads/standartUser.jpeg' title="↻ Изменить аватар"/>
+                <input type="file" id="hiddenProfileAva" style="display: none">
+            </div>
+
+            <div class='profileData'>
+                <div class='dataType'>
+                    Login:
+                    <input id='profileLogin' readonly=true/>
+                </div>
+                <div class='dataType'>
+                    Nick:
+                    <input id='nName' maxlength="10"/>
+                </div>
+                <div class="changePassSpoiler" id="changePassSpoiler">
+                    Изменить пароль
+                </div>
+                <div class="newPassArea" id="newPassArea">
+                    <div class="dataType">
+                        Старый:
+                        <input style="width: 150px" type="password" id="oldPass" autocomplete="new-password" minlength="8" required>
+                    </div>
+                    <div class="dataType">Новый:
+                        <input style="width: 150px" type="password" id="newPass" minlength="8" autocomplete="new-password" required></div>
+                    <div class="dataType">Повторите:
+                        <input type="password" id="newPassCheck" autocomplete="new-password" style="width: 150px"></div>
+
+                    <button id='viewPassEye' class="viewPassEye" onclick="viewPass()">
+                        <p>показать</p>
+                        <ion-icon class="eye" name="eye-outline"></ion-icon>
+                    </button>
+
+                    <div class="newPassCheckStatus" id="newPassCheckStatus"></div>
+                </div>
+
+
+
+            </div>
+
+        </div >
+        <span class = 'buttons'>
+            <button class= 'saveChanges' id='sBtt'>Сохранить</button>
+            <button class= 'logout' id='logout'>Выйти</button>
+        </span>
+        <div id="profileUpdateStatus"></div>
+    </div>
+
+
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/index.js"></script>
+<script src="js/clientAPI.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/buttons.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1000px) and (min-width: 300px) and (min-height: 1500px){
+    .allTabs{
+        width: 80%;
+    }
+    .tab {
+
+        width: 25%;
+        height: 75px;
+
+    }
+
+    .tab .tabTittle {
+        font-size: 35;
+    }
+
+}

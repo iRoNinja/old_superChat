@@ -1,0 +1,148 @@
+.userBlock {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(0, 150, 135, 0.32);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    /*margin-right: 100px;*/
+    /*background-color: rgba(147, 220, 255, 0.38);*/
+    height: 15%;
+    min-height: 100px;
+    min-width: 260px;
+    /*overflow: visible;*/
+    /*bottom: 0px;*/
+    /*position: relative;*/
+    background-color: #282e32;
+
+}
+
+.userBlock .userName {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.userBlock .userMessageAndButton {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    color: rgba(240, 248, 255, 0.73);
+}
+
+.userBlock input {
+    background-color: #23625d;
+    color: rgba(240, 248, 255, 0.83);
+    font-size: 16px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid #23625d;
+}
+
+.userBlock input::placeholder {
+    color: rgba(173, 216, 230, 0.52);
+}
+
+.userBlock input:focus-visible {
+    outline: 1px solid #23625d;
+    background-color: rgba(35, 98, 93, 0.79);
+}
+
+.userBlock .userMessageAndButton .userMessage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea {
+    width: 100%;
+    min-width: 120px;
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea textarea::placeholder {
+    color: rgba(173, 216, 230, 0.55);
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    margin-bottom: 5px;
+    border: 1px solid #23625d;
+    background-color: #23625d;
+    color: rgb(206, 213, 219);
+    border-radius: 5px;
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea textarea:focus-visible {
+    outline: 2px solid #23625d;
+    background-color: rgba(35, 98, 93, 0.79);
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea textarea::-webkit-scrollbar-track {
+    background: #282e32;
+/ / #282e32;
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea textarea::-webkit-scrollbar-thumb {
+    background: #555;
+/ / #23625d;
+}
+
+.userBlock .userMessageAndButton .userMessage .textarea textarea::-webkit-scrollbar-thumb:hover {
+    background: #009687;
+}
+.userBlock .userMessageAndButton .userMessage .sendButton {
+    /*width: auto;*/
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+}
+.addFile{
+    width: 50px;
+    height: 50px;
+   margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userBlock .userMessageAndButton button {
+    background-color: #23625d;
+    color: rgba(240, 248, 255, 0.78);
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.userBlock .userMessageAndButton button:hover {
+    background-color: #2a7570;
+}
+
+.userNameAndUpload{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}

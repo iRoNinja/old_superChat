@@ -1,0 +1,152 @@
+.allMessages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(0, 150, 135, 0.32);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 97%;
+    overflow-y: auto;
+    min-height: 100px;
+    font-family: Monospace;
+    background-color: transparent;
+}
+
+.allMessages .message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    color: aliceblue;
+    max-height: 200px;
+    height: auto;
+
+}
+
+.allMessages .messageOwn {
+    background-color: rgba(42, 47, 51, 0.43);
+}
+
+.allMessages .messageAlien {
+    background-color: rgba(42, 102, 103, 0.29);
+}
+
+.allMessages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.allMessages::-webkit-scrollbar-track {
+    background: #282e32;
+}
+
+.allMessages::-webkit-scrollbar-thumb {
+    background: #23625d;
+}
+
+.allMessages::-webkit-scrollbar-thumb:hover {
+    background: #009687;
+}
+
+.allMessages .message .messageText {
+    padding: 5px;
+    /*height: 80%;*/
+    width: 100%;
+}
+
+.allMessages .message .messageText textarea {
+    background-color: transparent;
+    color: rgba(240, 248, 255, 0.91);
+    border: none;
+    outline: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display:block;
+    max-height: 100px;
+    resize: none;
+}
+
+.allMessages .message textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.allMessages .message textarea::-webkit-scrollbar-track {
+    background: #282e32;
+}
+
+.allMessages .message textarea::-webkit-scrollbar-thumb {
+    background: #23625d;
+}
+
+.allMessages .message textarea::-webkit-scrollbar-thumb:hover {
+    background: #009687;
+}
+
+.allMessages .message .userInfo {
+    width: 105px;
+    padding: 5px;
+    text-align: center;
+}
+
+.allMessages .message .userInfo .userNickname {
+    font-size: 14px;
+    font-weight: bold;
+    color: #009687;
+    cursor: pointer;
+/*white-space: nowrap;*/
+}
+.userNickname:hover {
+    background-color: #202226;
+    border-radius: 3px;
+}
+
+.allMessages .message .userInfo .messageTime {
+    font-size: 10px;
+    color: #F0F8FFE7;
+}
+
+.allMessages .sysMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    /*width: 95%;*/
+}
+
+.allMessages .sysMessage .sysMessageText {
+    background-color: #282e32;
+    color: #009586;
+    text-align: center;
+    border-radius: 30px;
+    /*width: max-content;*/
+    padding: 2px 8px 4px 8px;
+    max-width: 90%;
+    /*width: 90%;*/
+}
+.messageText img {
+    border-radius: 3px;
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 200px;
+}
+.message .avaDiv img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+    display: none;
+}
+.message .avaDiv{
+    padding: 5px;
+    min-width: 50px;
+    height: 50px;
+}
+.message .avaDiv img:hover{
+ box-shadow: 0px 0px 5px 5px #4d5059;
+    cursor: pointer;
+}

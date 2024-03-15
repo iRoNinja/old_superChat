@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1000px) and (min-width: 300px) and (min-height: 1500px){
+    .userBlock{
+       height: 3vh;
+        width: 100%;
+        padding: 0.5%;
+    }
+
+    .userBlock  button {
+        background-color: #23625d;
+        width: 30%;
+        height: 50%;
+        /*font-size: 100px;*/
+        /*margin-top: 4px;*/
+    }
+
+    .userMessageAndButton{
+        /*width: 48vh;*/
+        /*height: 90vh;*/
+    }
+
+    /*.sendButton{*/
+    /*    height: 5vh;*/
+    /*    */
+    /*}*/
+
+    .userBlock textarea{
+        height: 100%;
+        width: 70%;
+        font-size: 40px;
+    }
+    textarea::placeholder {
+        font-size: 40px;
+    }
+
+
+}
+

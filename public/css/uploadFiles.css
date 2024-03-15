@@ -1,0 +1,49 @@
+.form-upload__input{
+    display: none;
+}
+
+.form-upload__submit{
+    display: none;
+}
+
+.uploadArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form-upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.skrepka {
+    background-color: #23625d;
+    color: rgba(240, 248, 255, 0.78);
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    /*font-size: 10px;*/
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.uploadArea progress {
+    display: none;
+}
+.form-upload__title {
+    max-width: 100px;
+    max-height: 15px;
+  overflow: hidden;
+    font-size: 12;
+}
+
+.uploadArea img{
+    max-height: 45px;
+    max-width: 100px;
+    margin-left: 5px;
+    border-radius: 3px;
+}

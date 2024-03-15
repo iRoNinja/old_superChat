@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1000px) and (min-width: 300px)
+and (min-height: 1500px)
+{
+    html {
+        width: 95vw;
+        padding: 10px;
+        max-height: 95vh;
+
+        margin: 0 auto;
+    }
+    body{
+        /*padding: 15px;*/
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        /*margin: 0 auto;*/
+    }
+
+    .shapka {
+
+        height: 4%;
+        max-height: 10%;
+        font-size: 50;
+    }
+ .chatArea{
+     height: 80%;
+     width: 100%;
+ }
+    .userProfile{
+
+        width: 15%;
+
+    }
+    .userProfile img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .userProfile .profileName {
+        font-size: 25px;
+    }
+
+    .bottomContainer{
+        width: 100%;
+    }
+    /*body {*/
+    /*margin: 0 auto;}*/
+
+    .serverStatus {
+        height: 55px;
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .serverStatus .krug {
+width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .serverStatus .mute {
+width: 40px;
+        height: 40px;
+    }
+
+    .serverStatus .mute:hover {
+
+    }
+
+    .serverStatus .soundOn {
+
+    }
+
+    .serverStatus .soundOn:hover {
+
+    }
+
+}
+
+
+

@@ -1,0 +1,211 @@
+html{
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #282e32;
+}
+
+.settings {
+    background-color: rgba(121, 120, 120, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+details {
+    background-color: #009687;
+    margin: 10px;
+    /*padding: px;*/
+    border-radius: 5px;
+    height: auto;
+    cursor: pointer;
+}
+
+summary {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    list-style-position: revert;
+    height: 30px;
+    font-size: 20px;
+}
+p{
+    padding-left: 5px;
+}
+
+.open_setting {;
+    cursor: default;
+    background-color: #01796d;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+input[type="range"] {
+    background: #282e32;
+    border-radius: 8px;
+    height: 7px;
+    -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #00ccb9;
+    cursor: pointer;
+}
+
+.example_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    height: 60px;
+    /*font-size: 25px;*/
+}
+
+.doneParent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.done {
+    text-align: center;
+    width: 200px;
+    background-color: #00ccb9;
+    border-radius: 5px;
+}
+
+
+.buttons{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.saveChanges {
+    width: 200px;
+    height: 35px;
+    font-size: 25px;
+    background-color: rgba(0, 150, 135, 0.65);
+    border-radius: 7px;
+    border: 0;
+    font-family: Monospace;
+    color: rgb(40, 46, 50);
+    margin-right: 10px;}
+
+.saveChanges:hover {
+    background-color: rgba(0, 176, 159, 0.85);
+    box-shadow:0 0 20px #00b09f;
+    color: #00ccb9;
+}
+
+.saveChanges:disabled{
+    background-color: rgba(38, 38, 38, 0.6);
+    color: rgba(35, 98, 93, 0.63);}
+
+.saveChanges:disabled:hover{
+    background-color: rgba(38, 38, 38, 0.6);
+    color: rgba(35, 98, 93, 0.63);}
+
+.cancel {
+    width: 200px;
+    height: 35px;
+    font-size: 25px;
+    background-color: rgba(124, 124, 124, 0.78);
+    border-radius: 7px;
+    border: 0;
+    font-family: Monospace;
+    color: rgb(40, 46, 50);
+    margin-left: 10px;
+}
+
+.cancel:hover {
+    background-color: rgba(0, 0, 0, 0.51);
+    box-shadow:0 0 20px rgb(136, 136, 136);
+    color: #838383;
+}
+
+.cancel:disabled{
+    background-color: rgba(38, 38, 38, 0.6);
+    color: rgba(35, 98, 93, 0.63);}
+
+.cancel:disabled:hover{
+    background-color: rgba(38, 38, 38, 0.6);
+    color: rgba(35, 98, 93, 0.63);}
+
+.customFon {
+    display: flex;
+flex-direction: row;
+    align-items: center;
+justify-content: flex-end;
+margin-bottom:20px}
+
+.customFon p{
+    margin-right: 10px;
+}
+.imgFon {
+    max-width: 250px;
+    width: 250px;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sendFon {
+    width: 120px;
+    height: 20px;
+    font-size: 15px;
+    background-color: rgba(0, 150, 135, 0.65);
+    border-radius: 3px;
+    border: 0;
+    font-family: Monospace;
+    color: rgb(40, 46, 50);
+    margin-right: 10px;
+}
+
+.sendFon:hover {
+    background-color: rgba(0, 0, 0, 0.51);
+    box-shadow:0 0 20px rgb(136, 136, 136);
+    color: #838383;
+}
+
+.sendFon:disabled{
+    background-color: rgba(38, 38, 38, 0.6);
+    color: rgba(35, 98, 93, 0.63);}
+
+.sendFon:disabled:hover{
+    background-color: rgba(38, 38, 38, 0.6);
+    color: rgba(35, 98, 93, 0.63);}
+
+.fonName {
+    font-size: 12px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.selectFon {
+    padding: 3px;
+    font-size: 15px;
+    background-color: #112a27;
+    color: #009687;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}

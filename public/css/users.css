@@ -1,0 +1,118 @@
+.users {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(0, 150, 135, 0.32);
+    padding: 5px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 97%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100px;
+    position: relative;
+    font-family: Monospace;
+    background-color: transparent;
+    cursor: default;
+}
+
+.usersTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282e32;
+    color: rgba(240, 248, 255, 0.73);
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+}
+
+.usersTitleA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282e32;
+    color: rgba(240, 248, 255, 0.73);
+    padding: 5px;
+    height: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    /*!*white-space: nowrap;*!*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+}
+
+
+.users .usersTitle .usersLogo {
+    padding-right: 3px;
+}
+
+.users .usersList {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 100%;
+}
+
+.users::-webkit-scrollbar {
+    width: 10px;
+}
+
+.users::-webkit-scrollbar-track {
+    background: #282e32;
+}
+
+.users::-webkit-scrollbar-thumb {
+    background: #009687;
+}
+
+.users::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.users .user {
+    display: flex;
+    align-items: center;
+    background-color: #282e32;
+    color: #009687;
+    padding: 5px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    /*overflow:;*/
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.users .user:hover {
+    background-color: #23625d;
+    color: #18191d;
+}
+
+.miniAva {
+    height: 20px;
+    max-width: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: all .10s ease-in 0s;
+}
+.miniAva:hover{
+    height: 26px;
+    max-width: 26px;
+    border-radius: 13px;
+    cursor: help;
+}

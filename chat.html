@@ -1,0 +1,209 @@
+
+
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="/css/index.css" type="text/css">
+<link rel="stylesheet" href="/css/tabs.css" type="text/css">
+<link rel="stylesheet" href="/css/users.css" type="text/css">
+<link rel="stylesheet" href="/css/userBlock.css" type="text/css">
+<link rel="stylesheet" href="/css/allMessages.css" type="text/css">
+<link rel="stylesheet" href="/css/uploadFiles.css" type="text/css">
+<link rel="stylesheet" href="/css/shapka.css" type="text/css">
+
+<link rel="stylesheet" href="/css/index_m.css" type="text/css">
+<link rel="stylesheet" href="/css/tabs_m.css" type="text/css">
+<link rel="stylesheet" href="/css/users_m.css" type="text/css">
+<link rel="stylesheet" href="/css/userBlock_m.css" type="text/css">
+<link rel="stylesheet" href="/css/allMessages_m.css" type="text/css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+<title id="titleTOP">Super Chat</title>
+<body>
+<div id="underBody" class="underBody">
+    <div class='imgView' id='imgViewArea'>
+        <img id='imgView'/>
+    </div>
+    <div class="shapka" id="shapka">
+                <div class='logo'>
+<!--                    <ion-icon name="logo-twitter"></ion-icon>-->
+                    <p>SUPER CHAT</p>
+<!--                    <ion-icon name="logo-nodejs"></ion-icon>-->
+                </div>
+        <ul>
+            <button id="shapka_profile"><img id='ava' src='uploads/standartUser.jpeg'/>
+            <div class='profileName' id='profileName'>Войти</div>
+<!--                    id="shapka_profile"><ion-icon name="person-circle-outline" class="ion_icon person_circle_outline"></ion-icon><p>Профиль</p>-->
+            </button>
+            <button id="shapka_chat"><ion-icon name="chatbubbles-outline" class="ion_icon"></ion-icon><p>Чатик</p></button>
+            <button id="shapka_settings"><ion-icon name="settings-outline" class="ion_icon"></ion-icon><p>Настройки</p></button>
+            <button id="adminka" style="display: none"><ion-icon name="code-slash-outline"></ion-icon><p>Админка</p></button>
+        </ul>
+
+    </div>
+    <div class="profileAndTabs">
+        <div class='userProfile'>
+            <select id="select" class="usersTitle" >
+                <option value="1">Все</option>
+                <option value="2" selected>Online</option>
+                <option value="3">Друзья</option>
+            </select>
+<!--            <img id='ava' src='uploads/standartUser.jpeg'/>-->
+<!--            <div class='profileName' id='profileName'>Войти</div>-->
+        </div>
+        <div class='allTabs' id="allTabs">
+        <div class='tab' id="RoomTab0">
+            <div class="tabTittle" id="allMessagesTitle">Общий чат</div>
+        </div>
+
+    </div>
+      </div>
+    <div class="vesChat">
+            <div class='chatArea' id="chatArea">
+
+            <div class='users' id='users'>
+
+
+                <div class='usersTitleA'>
+                    <ion-icon class="usersLogo" name="people"></ion-icon>
+                    <p>&nbsp;Users</p>
+                </div>
+
+                <div id='usersList' class="usersList"></div>
+                <div id='customUsersList' class="usersList"></div>
+
+            </div>
+            <div class="allMessages" id="msgAreaRoom0">
+                <!--                        <div class="message">-->
+                <!--                            <div class="userInfo">-->
+                <!--                                <div class="userNickname">Admin</div>-->
+                <!--                                <div class="messageTime">Hack</div>-->
+                <!--                            </div>-->
+                <!--                            <div class="messageText">-->
+                <!--                                <textarea>Приветствуем Вас в нашем ламповом чатике :)</textarea>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                <div class="sysMessage">-->
+                <!--                    <div class="sysMessageText"></div>-->
+                <!--                </div>-->
+            </div>
+
+        </div>
+            <div class="bottomContainer">
+                <div class="userBlock">
+
+                    <div class="userMessageAndButton">
+                        <div class="label">
+                            <label></label>
+                        </div>
+                        <div class="userMessage">
+                            <div class="textarea">
+                                <textarea id="messageInput" placeholder="Введите сообщение..."></textarea>
+                            </div>
+                            <div class="sendButton">
+
+                                <button id="sendMessage">
+                                    <ion-icon name="send"></ion-icon>
+                                </button>
+                                <div class="userNameAndUpload">
+                                    <div class="userName">
+                                        <input type="text" id="userNick" placeholder="Введите имя..." maxlength="10"/>
+                                    </div>
+
+                                    <div class="uploadArea" id="uploadArea">
+                                        <form
+                                                class="form-upload"
+                                                id="uploadForm2"
+                                                method="post"
+                                                enctype="multipart/form-data"
+                                        >
+                                            <!--                <label class="form-upload__label" for="uploadFormFile">-->
+                                            <span class="form-upload__title" id="uploadedFileName"></span>
+                                            <div class="form-upload__container">
+                                                <span class="form-upload__status" id="uploadForm_Status"></span>
+                                                <span id="uploadForm_Size"></span>
+                                            </div>
+                                            <input
+                                                    class="form-upload__input"
+                                                    id="uploadFormFile"
+                                                    type="file"
+                                                    name="photo"
+                                                    accept="image/*">
+
+                                            </label>
+                                            <input
+                                                    class="form-upload__submit"
+                                                    id="uploadForm_Submit"
+                                                    type="submit"
+                                                    value="Загрузить файл"
+                                            >
+                                            <progress id="progressBar" value="0" max="100"></progress>
+                                        </form>
+                                        <div class="sendFile" id="fileChooseBtn"><ion-icon name="attach-outline" class="skrepka"></ion-icon></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+
+            </div>
+                <div id="serverStatus" class="serverStatus">
+                <div id="serverStatusText" class="serverStatusText">Сервер не отвечает!</div>
+                <div id="krug" class="krug"></div>
+                <div>
+                    <ion-icon class="mute soundOn" id="mute" name="volume-high"></ion-icon>
+                </div>
+            </div>
+            </div>
+    </div>
+<div class="openUserInfo" id="openUserInfo" style="display: none">
+
+    <div class="userbox" id="userbox">
+        <img id="userboxava" class="userboxava"/>
+        <div id="userindfo" class="userindfo">
+            <div id="userinfonick" class="userinfotext"></div>
+            <div id="userinfoid" class="userinfotext"></div>
+            <div id="adminoruser" class="userinfotext"></div>
+            <div id="banned?" class="userinfotext"></div>
+<!--            <div id="aboutMe"></div>-->
+            <div id="lastOnline" class="userinfotext"></div>
+        </div>
+        <div id="userButtons" class="userButtons">
+            <button id="napisat"><ion-icon name="mail-outline"></ion-icon>Написать</button>
+            <button id="addFriend"></button>
+            <button style="background-color: rgba(150, 115, 115, 0.78)"><ion-icon name="ban-outline"></ion-icon>Блок</button>
+        </div>
+    </div>
+    <div class="closeUserInfo"><button id="closeUserInfo" ><ion-icon name="close-circle-outline"></ion-icon></button></div>
+</div>
+</div>
+</body>
+
+<!--<div id="contextMenu" class="context-menu" style="display: none">-->
+<!--    <ul class="menu">-->
+<!--        <li class="share"><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li>-->
+<!--        <li class="rename"><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Rename</a></li>-->
+<!--        <li class="link"><a href="#"><i class="fa fa-link" aria-hidden="true"></i> Copy Link Address</a></li>-->
+<!--        <li class="copy"><a href="#"><i class="fa fa-copy" aria-hidden="true"></i> Copy to</a></li>-->
+<!--        <li class="paste"><a href="#"><i class="fa fa-paste" aria-hidden="true"></i> Move to</a></li>-->
+<!--        <li class="download"><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>-->
+<!--        <li class="trash"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/index.js"></script>
+<script src="js/mainChatPage.js"></script>
+<script src="js/tabsManager.js"></script>
+<script src="js/clientAPI.js"></script>
+<script src="js/uploadFiles.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/buttons.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+

@@ -1,0 +1,87 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+  <title>Настройки</title>
+    <link rel="stylesheet" href="/css/shapka.css" type="text/css">
+    <link rel="stylesheet" href="/css/settings.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/Dtafalonso-Android-Lollipop-Settings.32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/Dtafalonso-Android-Lollipop-Settings.16.png">
+    <link rel="stylesheet" href="/css/allMessages.css" type="text/css">
+
+
+
+  </head>
+
+
+  <body>
+  <div class="shapka" id="shapka">
+    <div class='logo'>
+      <!--                    <ion-icon name="logo-twitter"></ion-icon>-->
+      <p>SUPER CHAT</p>
+      <!--                    <ion-icon name="logo-nodejs"></ion-icon>-->
+    </div>
+    <ul>
+      <button id="shapka_profile"><img id='ava' src='uploads/standartUser.jpeg'/>
+        <div class='profileName' id='profileName'>Войти</div>
+        <!--                    id="shapka_profile"><ion-icon name="person-circle-outline" class="ion_icon person_circle_outline"></ion-icon><p>Профиль</p>-->
+      </button>
+      <button id="shapka_chat"><ion-icon name="chatbubbles-outline" class="ion_icon"></ion-icon><p>Чатик</p></button>
+      <button id="shapka_settings"><ion-icon name="settings-outline" class="ion_icon"></ion-icon><p>Настройки</p></button>
+      <button id="adminka" style="display: none"><ion-icon name="code-slash-outline"></ion-icon><p>Админка</p></button>
+    </ul>
+
+  </div>
+  <div id="settings" class="settings">
+    <details id="settings_menu1">
+      <summary><ion-icon name="color-palette-outline"></ion-icon><p>Темы</p></summary>
+      <div class="open_setting">
+        <div>Кастомный фон:</div>
+        <div class="customFon" >
+          <p id="fonName" class="fonName"></p>
+        <input type="file" id="inputFon" style="display: none">
+        <button class="sendFon" id="inputFonChose"><ion-icon name="attach-outline" class="skrepka"></ion-icon> Выбрать</button>
+        <button id="sendFon" class="sendFon" disabled><ion-icon name="arrow-up-outline"></ion-icon>Загрузить</button>
+        </div>
+        <div>Пресеты:
+          <select id="selectFon" class="selectFon" >
+          </select>
+        </div>
+        <img id="imgFon" class="imgFon">
+      </div>
+    </details>
+    <details id="settings_menu2">
+      <summary><ion-icon name="notifications-outline"></ion-icon><p>Уведомления</p></summary>
+      <div class="open_setting">МЕНЯЙ МЕНЯ полностью</div>
+    </details>
+    <details id="settings_menu3">
+      <summary><ion-icon name="language-outline"></ion-icon><p>Язык</p></summary>
+      <div class="open_setting">МЕНЯЙ МЕНЯ полностью</div>
+    </details>
+    <details id="settings_menu4">
+      <summary><ion-icon name="text-outline"></ion-icon><p>Шрифт</p></summary>
+      <div class="open_setting">
+         <div class="example_text" id = 'example_text'>"Съешь еще этих мягких французских булочек"</div>
+        <input type="range" min="10" max="25" value="10" class="slider" id="slider">
+        <div id="sliderValue">0</div>
+      </div>
+    </details>
+
+    <div class="doneParent" id='doneParent'><div class="done" id="done"></div></div>
+    <span class = 'buttons'>
+
+            <button class= 'saveChanges' id='saveChanges'>Сохранить</button>
+            <button class= 'cancel' id='logout'>Отмена</button>
+    </span>
+  </div>
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/settings.js"></script>
+
+
+  <script src="js/clientAPI.js"></script>
+  <script src="js/buttons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

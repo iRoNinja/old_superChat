@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1000px) and (min-width: 300px) and (min-height: 1500px){
+    .users {
+        width: 15%;
+
+    }
+
+    .users .usersTitle {
+      height: 3%;
+      font-size: 30;
+    }
+
+    .users .user {
+        height: 5%;
+        font-size: 40;
+
+    }
+
+}

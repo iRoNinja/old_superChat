@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1000px) and (min-width: 300px) and (min-height: 1500px){
+    .allMessages{
+        width: 85%;
+    }
+    .allMessages .message {
+
+        max-height: 25%;
+        height: auto;
+        font-size: 30;
+        /*border-radius: 10px;*/
+
+    }
+
+    .message .avaDiv img {
+        width: 80px;
+        height: 80px;
+
+
+    }
+    .message .avaDiv{
+        min-width: 80px;
+        height: 80px;
+    }
+
+
+
+    .allMessages .message .messageText textarea {
+      font-size: 30;
+    }
+    .allMessages .message .userInfo  {
+        min-width: 15%;
+        max-width: 15%;
+
+    }
+
+    .allMessages .message .messageText {
+
+        width: 85%;
+    }
+
+    .allMessages .message .userInfo .userNickname {
+        font-size: 30;
+        overflow: hidden;
+    }
+
+    .allMessages .message .userInfo .messageTime {
+        font-size: 20;
+
+    }
+    .allMessages .sysMessage .sysMessageText {
+       font-size: 30;
+    }
+    .messageText img {
+        border-radius: 3px;
+        height: auto;
+        width: auto;
+        max-height: 200px;
+        max-width: 300px;
+    }
+}
